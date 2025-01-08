@@ -1,5 +1,5 @@
 <?php
-include_once("Framework\SessionManager\SessionManager.php");
+include_once("Framework/SessionManager/SessionManager.php");
 $userData = SessionManager::GetUserSession();
 ?>
 
