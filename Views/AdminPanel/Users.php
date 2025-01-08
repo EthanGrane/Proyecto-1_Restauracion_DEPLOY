@@ -2,6 +2,9 @@
 include_once("Framework/SessionManager/SessionManager.php");
 
 $userData = SessionManager::GetUserSession();
+
+if(isset($userData['UserID']))
+{
 ?>
 
 <script>
@@ -9,6 +12,20 @@ $userData = SessionManager::GetUserSession();
     localStorage.setItem("email", "<?php echo $userData['UserMail']; ?>");
     localStorage.setItem("password", "<?php echo $userData['UserPassword']; ?>");
 </script>
+
+<?php
+}
+else
+{
+?>
+<script>
+    localStorage.setItem("username", "");
+    localStorage.setItem("email", "");
+    localStorage.setItem("password", "");
+</script>
+<?php
+}
+?>
 
 <main style="margin-left: 10%; margin-right: 10%;">
     <div class="d-flex">
@@ -67,4 +84,4 @@ $userData = SessionManager::GetUserSession();
     </div>
 </main>
 
-<script src="\Views\AdminPanel\Users.js"></script>
+<script src="/Views/AdminPanel/Users.js"></script>

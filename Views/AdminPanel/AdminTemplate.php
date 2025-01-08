@@ -18,7 +18,7 @@
                     <div class="container-fluid">
 
                         <a class="navbar-brand" href="\AdminPanel">
-                            <img src="\Views\Resources\logo.png" alt="Logo" width="30" height="30"
+                            <img src="/Views/Resources/logo.png" alt="Logo" width="30" height="30"
                                 class="d-inline-block align-top">
                             Crispy-19
                         </a>
