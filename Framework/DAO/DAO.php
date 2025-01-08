@@ -22,7 +22,7 @@ class DAO
     {
         $servername = "localhost";
         $port = "33060";
-        $username = "root";
+        $username = "WebUser";
         $password = "root";
         $database = "Web";
         $this->conn = new mysqli($servername, $username, $password, $database, $port);
