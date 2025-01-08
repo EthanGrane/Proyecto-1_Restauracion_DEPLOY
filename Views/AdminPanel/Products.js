@@ -6,7 +6,7 @@ const API_ADDRESS = "http://localhost:7777/api";
 let DOM_productList;
 let DOM_listItem;
 
-let adminMail = localStorage.getItem("email");
+let adminMail = "admin@admin.com";// localStorage.getItem("email");
 let adminPassword = 123456;
 
 let data;
