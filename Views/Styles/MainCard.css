@@ -1,0 +1,198 @@
+.MainCard 
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    
+    background-repeat: no-repeat;
+
+    padding: 0 20px;
+    padding-top: 32px;
+
+    margin-bottom: 16px;
+}
+
+.MainTitle
+{
+    color: var(--Primary);
+}
+
+.CardTitle
+{
+    text-shadow: black 0px 1px 5px !important;
+
+    color: white !important;
+
+    font-size: 8vw !important;
+
+    text-align: center;
+
+    font-weight: 700 !important;
+
+    margin: 0;
+}
+
+.CardSubTitle
+{
+    color: white !important;
+
+    font-size: 2.5vw !important;
+
+    text-align: center;
+
+    font-weight: 100 !important;
+
+    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.CardLink 
+{
+    text-shadow: black 0px 1px 5px !important;
+
+    font-size: 1.5vw !important;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: 300;
+    padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.CardLink span {
+    margin-left: 8px;
+}
+
+.CardLink_Icon {
+    color: var(--Primary);
+    margin-left: 8px; /* Añade un pequeño espacio entre el texto y el icono */
+}
+
+.CardLink:hover
+{
+    color: white;
+}
+
+.CardLink_Text:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.ProductCard
+{
+    background-color: var(--NeutralColor_1);
+
+    width: 254px;
+    height: 312px;
+
+    padding: 16px;
+
+    margin: 16px;
+
+    border-bottom: 1px solid var(--Primary);
+}
+
+.ProductImage
+{
+    height: 128px;
+
+    overflow: hidden; 
+}
+
+.ProductImage img
+{
+    display: block;
+    height: 100%;
+    width: auto;
+
+    margin: auto;
+    transition: transform 0.1s ease;
+}
+
+.ProductImage img:hover {
+    transform: scale(0.9);
+}
+.ProductName
+{
+    font-size: large;
+    font-weight: 600;
+
+    margin: 0;
+}
+
+.ProductDescription
+{
+    margin: 0;
+
+    font-weight: 200;
+
+    color: var(--NeutralColor_2);
+
+    height: 100px;
+    overflow: hidden;
+}
+
+.ProductForm
+{
+    background: none;
+    border: none;
+}
+
+.ProductForm button
+{
+    background: none;
+    border: none;
+    color: var(--Primary) !important;
+    font-weight: 200;
+}
+
+.ProductForm button:hover
+{
+    text-decoration: underline;
+}
+
+.ProductLink
+{
+    font-weight: 100 !important;
+    color: var(--Primary) !important;
+}
+
+.btn-primary
+{
+    background-color: var(--Primary) !important;
+    border-width: 0 !important;
+    color: black !important;
+
+}
+
+.btn-primary:hover
+{
+    text-decoration: underline;    
+}
+
+.btn-secondary
+{
+    background-color: none !important;
+    background: none !important;
+    color: white !important;
+    border-width: 1px solid var(--Primary) !important;
+    border-color: var(--Primary) !important;
+    border-width: 1px !important;
+}
+
+.btn-secondary:hover
+{
+    text-decoration: underline;    
+}
